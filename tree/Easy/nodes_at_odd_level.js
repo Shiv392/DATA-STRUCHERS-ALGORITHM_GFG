@@ -18,7 +18,7 @@ class Solution {
           for(let i=0;i<size;i++){
               let curr=queue.shift();
               if(level==true){
-                  res.push(curr.data);
+                  res.push(curr);
               }
               if(curr.left) queue.push(curr.left);
               if(curr.right) queue.push(curr.right);
